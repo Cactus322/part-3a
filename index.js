@@ -76,8 +76,6 @@ app.delete('/api/persons/:id', (request, response) => {
     response.json(persons)
 })
 
-
-
 app.post('/api/persons', (request, response) => {
     const body = request.body;
 
@@ -107,12 +105,6 @@ function assignPerson (req,res, next) {
 
     next()
 }
-
-app.get('/', (request, response) => {
-    response.send(`
-        <h1>Hello world</h1>
-    `)
-})
 
 const PORT = process.env.PORT || 3001;
 app.listen(PORT, () => {

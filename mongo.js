@@ -35,6 +35,8 @@ const getPersonsList = () => {
     .catch((err) => console.log(err));
 }
 
+console.log(1 + 2);
+
 const setPersonInfo = (name, number) => {
     mongoose
     .connect(url)

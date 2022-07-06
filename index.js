@@ -40,7 +40,6 @@ app.get('/info', (request, response) => {
     });
 })
 
-
 app.get('/api/persons/:id', (request, response) => {
     Person.findById(request.params.id).then(person => {
         response.json(person)
